@@ -1,0 +1,182 @@
+[
+  {
+    "id": "1",
+    "name": "Wireless Bluetooth Headphones",
+    "price": 2999.00,
+    "description": "Noise-cancelling over-ear headphones with 30hr battery",
+    "stock": 50,
+    "imageUrl": "https://assets.ajio.com/medias/sys_master/root/20240703/51Q1/6685b5d06f60443f314a090d/-473Wx593H-4938418030-multi-MODEL.jpg",
+    "category": "electronics"
+  },
+  {
+    "id": "2",
+    "name": "Smart Fitness Watch",
+    "price": 8999.00,
+    "description": "Track your fitness goals with GPS and heart rate monitor",
+    "stock": 30,
+    "imageUrl": "https://assets.myntassets.com/dpr_1.5,q_30,w_400,c_limit,fl_progressive/assets/images/20415012/2022/11/23/d6896930-4f38-48d4-a6c8-424f6b6006a41669204316059-Fitbit-Inspire-3-Health--Fitness-Tracker-with-Stress-Mgt--BT-1.jpg",
+    "category": "electronics"
+  },
+  {
+    "id": "3",
+    "name": "4K Smart TV 55 inch",
+    "price": 45999.00,
+    "description": "Ultra HD 4K Smart TV with HDR and built-in streaming apps",
+    "stock": 20,
+    "imageUrl": "https://www.cinegold.in/cdn/shop/files/55inch.jpg?v=1712918956",
+    "category": "electronics"
+  },
+  {
+    "id": "4",
+    "name": "Wireless Gaming Mouse",
+    "price": 1499.00,
+    "description": "High precision wireless gaming mouse with RGB lighting",
+    "stock": 75,
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq6mr1NBMQ2cV1mZd8tpfM-tYHRHe2eeSYpA&s",
+    "category": "electronics"
+  },
+  {
+    "id": "5",
+    "name": "Bluetooth Speaker",
+    "price": 2499.00,
+    "description": "Portable waterproof speaker with 12hr battery life",
+    "stock": 60,
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFyuZLQ8XgwRk-bw2aoWey9hazF8VSch4zKg&s",
+    "category": "electronics"
+  },
+  {
+    "id": "6",
+    "name": "Men's Casual T-Shirt",
+    "price": 499.00,
+    "description": "100% cotton comfortable fit t-shirt, available in multiple colors",
+    "stock": 100,
+    "imageUrl": "https://www.cotstyle.com/cdn/shop/files/RN01_386254_S_Peach_7.jpg?v=1685429382",
+    "category": "clothing"
+  },
+  {
+    "id": "7",
+    "name": "Men's Denim Jeans",
+    "price": 1299.00,
+    "description": "Classic fit denim jeans with stretch fabric",
+    "stock": 80,
+    "imageUrl": "https://jimmyluxury.in/cdn/shop/files/IMG_9790copy.jpg?v=1758199331&width=1080",
+    "category": "clothing"
+  },
+  {
+    "id": "8",
+    "name": "Men's Formal Shirt",
+    "price": 899.00,
+    "description": "Slim fit formal shirt, wrinkle-free fabric",
+    "stock": 65,
+    "imageUrl": "https://cantabilshop.com/cdn/shop/products/MSHF00132_ROYALBLUE_1.jpg?v=1751348478",
+    "category": "clothing"
+  },
+  {
+    "id": "9",
+    "name": "Men's Winter Jacket",
+    "price": 2999.00,
+    "description": "Warm insulated jacket perfect for winter",
+    "stock": 40,
+    "imageUrl": "https://columbia.scene7.com/is/image/ColumbiaSportswear2/40395-SEO-SUB_SM?$aem_pjpeg$&scl=1.689149560117302&wid=341&hei=231",
+    "category": "clothing"
+  },
+  {
+    "id": "10",
+    "name": "Men's Polo Shirt",
+    "price": 699.00,
+    "description": "Classic polo shirt with collar, comfortable fabric",
+    "stock": 90,
+    "imageUrl": "https://images-static.nykaa.com/media/catalog/product/0/d/0ddaba4USTSHC0084_1.jpg?tr=w-500",
+    "category": "clothing"
+  },
+  {
+    "id": "11",
+    "name": "Analog Wrist Watch",
+    "price": 1999.00,
+    "description": "Elegant analog watch with leather strap",
+    "stock": 45,
+    "imageUrl": "https://www.carlington.in/cdn/shop/files/1_80d43d8c-ac17-4c1d-b7d2-87c3f7a940a9.jpg?v=1742553861&width=2048",
+    "category": "watches"
+  },
+  {
+    "id": "12",
+    "name": "Digital Sports Watch",
+    "price": 1499.00,
+    "description": "Durable digital watch with stopwatch and alarm",
+    "stock": 55,
+    "imageUrl": "https://images.meesho.com/images/products/114959006/lyoov_512.webp?width=512",
+    "category": "watches"
+  },
+  {
+    "id": "13",
+    "name": "Luxury Chronograph Watch",
+    "price": 12999.00,
+    "description": "Premium stainless steel chronograph watch",
+    "stock": 15,
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5OTsPfeVYhqZVE3O4zIKZonXwkiV1KI7jEQ&s",
+    "category": "watches"
+  },
+  {
+    "id": "14",
+    "name": "Minimalist Watch",
+    "price": 2499.00,
+    "description": "Sleek minimalist design with mesh strap",
+    "stock": 35,
+    "imageUrl": "https://www.mnmlst.in/cdn/shop/files/LegacyBlack.jpg?v=1689925136&width=533",
+    "category": "watches"
+  },
+  {
+    "id": "15",
+    "name": "Dive Watch",
+    "price": 3999.00,
+    "description": "Water resistant dive watch, 200m depth rating",
+    "stock": 25,
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJM4-2ZyTp0Aq5nVMDICFNDpAexOE6BJO_vw&s",
+    "category": "watches"
+  },
+  {
+    "id": "16",
+    "name": "Men's Running Shoes",
+    "price": 2499.00,
+    "description": "Lightweight running shoes with cushioned sole",
+    "stock": 70,
+    "imageUrl": "https://assets.myntassets.com/dpr_1.5,q_30,w_400,c_limit,fl_progressive/assets/images/2025/APRIL/12/N9WO0onz_5b9597413ecd449bbdc4854eb326b53f.jpg",
+    "category": "footwear"
+  },
+  {
+    "id": "17",
+    "name": "Men's Casual Sneakers",
+    "price": 1799.00,
+    "description": "Comfortable everyday sneakers with breathable fabric",
+    "stock": 85,
+    "imageUrl": "https://rukminim2.flixcart.com/image/480/640/xif0q/shoe/7/d/4/6-195-40-asteroid-black-original-imah7byzffjfevkg.jpeg?q=90",
+    "category": "footwear"
+  },
+  {
+    "id": "18",
+    "name": "Men's Formal Shoes",
+    "price": 2999.00,
+    "description": "Classic leather formal shoes for office wear",
+    "stock": 50,
+    "imageUrl": "https://admin.mochishoes.com/product/19-424/660/19-424-12-40-1.jpg",
+    "category": "footwear"
+  },
+  {
+    "id": "19",
+    "name": "Men's Sandals",
+    "price": 799.00,
+    "description": "Comfortable casual sandals for summer",
+    "stock": 95,
+    "imageUrl": "https://images.meesho.com/images/products/462690761/fxss9_512.webp?width=512",
+    "category": "footwear"
+  },
+  {
+    "id": "20",
+    "name": "Men's Boots",
+    "price": 3499.00,
+    "description": "Rugged outdoor boots with ankle support",
+    "stock": 40,
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrl6dUijs3xnQ6xV02X5RXicNQ2OuwCadEOQ&s",
+    "category": "footwear"
+  }
+]

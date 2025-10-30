@@ -1,0 +1,182 @@
+.authWrapper {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 20px;
+}
+
+.authContainer {
+    width: 100%;
+    max-width: 450px;
+}
+
+.authHeader {
+    text-align: center;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.brandTitle {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.brandSubtitle {
+    font-size: 1.1rem;
+    opacity: 0.95;
+}
+
+.formCard {
+    background: white;
+    border-radius: 16px;
+    padding: 40px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+.formTitle {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 25px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.errorMessage {
+    background: #fee;
+    color: #c00;
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #fcc;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.95rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.formGroup label {
+    font-weight: 600;
+    color: #555;
+    font-size: 0.95rem;
+}
+
+.formGroup input {
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.formGroup input:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.submitButton {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    margin-top: 10px;
+}
+
+.submitButton:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+.submitButton:active {
+    transform: translateY(0);
+}
+
+.switchPrompt {
+    text-align: center;
+    margin-top: 25px;
+    color: #666;
+    font-size: 0.95rem;
+}
+
+.switchPrompt a {
+    color: #667eea;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.switchPrompt a:hover {
+    color: #764ba2;
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .authWrapper {
+        padding: 15px;
+    }
+
+    .brandTitle {
+        font-size: 2.5rem;
+    }
+
+    .brandSubtitle {
+        font-size: 1rem;
+    }
+
+    .formCard {
+        padding: 30px 25px;
+    }
+
+    .formTitle {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .brandTitle {
+        font-size: 2rem;
+    }
+
+    .formCard {
+        padding: 25px 20px;
+    }
+}
+/* ... existing code ... */
+
+.successMessage {
+    background: #efe;
+    color: #070;
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #cfc;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.95rem;
+}
+
+/* ... rest of existing code ... */

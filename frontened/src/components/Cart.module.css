@@ -1,0 +1,243 @@
+.cartContainer {
+    background: white;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: calc(100vh - 80px);
+}
+
+.cartHeader {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 30px;
+    margin-top: 0;
+    font-weight: 600;
+    border-bottom: 3px solid #667eea;
+    padding-bottom: 15px;
+}
+
+.emptyCart {
+    text-align: center;
+    color: #9ca3af;
+    padding: 100px 20px;
+    font-size: 1.3rem;
+}
+
+.emptyCartIcon {
+    font-size: 5rem;
+    margin-bottom: 20px;
+}
+
+.cartContent {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+}
+
+.cartItems {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cartItem {
+    background: #f9fafb;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.cartItem:hover {
+    transform: translateX(5px);
+}
+
+.cartItemHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.cartItemName {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #333;
+    margin: 0;
+    flex: 1;
+}
+
+.cartItemPrice {
+    font-size: 1.4rem;
+    color: #2563eb;
+    font-weight: 700;
+    white-space: nowrap;
+    margin-left: 15px;
+}
+
+.cartItemControls {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.quantityControl {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.quantityButton {
+    background: #e5e7eb;
+    color: #374151;
+    border: none;
+    width: 36px;
+    height: 36px;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quantityButton:hover {
+    background: #d1d5db;
+}
+
+.quantity {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+    min-width: 35px;
+    text-align: center;
+}
+
+.removeButton {
+    background: #ef4444;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: auto;
+}
+
+.removeButton:hover {
+    background: #dc2626;
+}
+
+.cartSummary {
+    background: #f9fafb;
+    border-radius: 12px;
+    padding: 30px;
+    height: fit-content;
+    position: sticky;
+    top: 100px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.summaryTitle {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #e5e7eb;
+    padding-bottom: 15px;
+}
+
+.totalAmount {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 25px;
+}
+
+.checkoutButton {
+    width: 100%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    padding: 18px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.checkoutButton:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+.checkoutButton:active {
+    transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+    .cartContainer {
+        padding: 20px;
+    }
+
+    .cartContent {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .cartSummary {
+        position: static;
+    }
+}
+
+@media (max-width: 768px) {
+    .cartHeader {
+        font-size: 2rem;
+    }
+
+    .cartItemName {
+        font-size: 1.1rem;
+    }
+
+    .cartItemPrice {
+        font-size: 1.2rem;
+    }
+
+    .totalAmount {
+        font-size: 1.5rem;
+    }
+}
+
+
+.cartContainer {
+    background: white;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: calc(100vh - 60px);
+}
+
+.cartHeader {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 30px;
+    margin-top: 0;
+    padding-top: 0;
+    font-weight: 600;
+    border-bottom: 3px solid #000;
+    padding-bottom: 15px;
+}
+
+/* ... rest of existing code ... */

@@ -1,52 +1,56 @@
 package com.example.quickcart.backened;
+
 import com.example.quickcart.backened.model.Product;
 import com.example.quickcart.backened.repository.ProductRepository;
-import jakarta.annotation.PostConstruct;
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
+import org.springframework.core.io.ClassPathResource;
 
+import java.io.InputStream;
 import java.util.List;
 
 @SpringBootApplication
 public class QuickCartApplication {
+
     public static void main(String[] args) {
         SpringApplication.run(QuickCartApplication.class, args);
     }
 
     @Bean
-    CommandLineRunner initProducts(ProductRepository productRepo) {
+    CommandLineRunner initProducts(ProductRepository productRepo, ObjectMapper objectMapper) {
         return args -> {
             long productCount = productRepo.count();
             System.out.println("📦 Found " + productCount + " products in DB");
 
-            boolean isDatabaseEmpty = productCount == 0;
-            if (isDatabaseEmpty) {
-                initializeSampleProducts(productRepo);
-            } else {
-                System.out.println("✅ Products already exist — skipping insert");
+            // Clear existing products and reload from data.json
+            if (productCount > 0) {
+                System.out.println("🗑️ Clearing existing products...");
+                productRepo.deleteAll();
             }
+
+            loadProductsFromJson(productRepo, objectMapper);
         };
     }
 
-    private void initializeSampleProducts(ProductRepository productRepo) {
-        List<Product> sampleProducts = createSampleProducts();
-        productRepo.saveAll(sampleProducts);
-        System.out.println("✅ Sample products loaded into MongoDB");
-    }
+    private void loadProductsFromJson(ProductRepository productRepo, ObjectMapper objectMapper) {
+        try {
+            ClassPathResource resource = new ClassPathResource("data.json");
+            InputStream inputStream = resource.getInputStream();
 
-    private List<Product> createSampleProducts() {
-        return List.of(
-                new Product(null, "Wireless Bluetooth Headphones", 2999.0,
-                        "Noise-cancelling over-ear headphones with 30hr battery", 50,
-                        "https://via.placeholder.com/150/0000FF/FFFFFF?text=Headphones"),
-                new Product(null, "Smart Fitness Watch", 8999.0,
-                        "Tracks heart rate, sleep, GPS, and notifications", 30,
-                        "https://via.placeholder.com/150/FF0000/FFFFFF?text=Watch"),
-                new Product(null, "Ergonomic Laptop Stand", 1299.0,
-                        "Aluminum stand with height adjustment for better posture", 100,
-                        "https://via.placeholder.com/150/008000/FFFFFF?text=Stand")
-        );
+            List<Product> products = objectMapper.readValue(
+                    inputStream,
+                    new TypeReference<List<Product>>() {}
+            );
+
+            productRepo.saveAll(products);
+            System.out.println("✅ Loaded " + products.size() + " products from data.json into MongoDB");
+        } catch (Exception e) {
+            System.err.println("❌ Failed to load products from data.json: " + e.getMessage());
+            e.printStackTrace();
+        }
     }
 }
